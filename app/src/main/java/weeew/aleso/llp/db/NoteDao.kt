@@ -1,4 +1,4 @@
-package com.alezzgo.notes.db
+package weeew.aleso.llp.db
 
 import androidx.room.Dao
 import androidx.room.Delete

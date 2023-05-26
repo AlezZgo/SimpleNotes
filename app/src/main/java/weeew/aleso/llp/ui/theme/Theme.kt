@@ -1,4 +1,4 @@
-package com.alezzgo.notes.ui.theme
+package weeew.aleso.llp.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

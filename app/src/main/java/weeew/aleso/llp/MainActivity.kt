@@ -1,30 +1,25 @@
-package com.alezzgo.notes
+package weeew.aleso.llp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
-import com.alezzgo.notes.db.NoteDatabase
-import com.alezzgo.notes.ui.NotePage
-import com.alezzgo.notes.ui.NotesViewModel
-import com.alezzgo.notes.ui.theme.NotesTheme
+import weeew.aleso.llp.db.NoteDatabase
+import weeew.aleso.llp.ui.NotePage
+import weeew.aleso.llp.ui.NotesViewModel
+import weeew.aleso.llp.ui.theme.NotesTheme
 
 class MainActivity : ComponentActivity() {
 
     private val db by lazy {
-        Room.databaseBuilder(applicationContext,NoteDatabase::class.java,"notes.db").build()
+        Room.databaseBuilder(applicationContext, NoteDatabase::class.java,"notes.db").build()
     }
 
     private val vm by viewModels<NotesViewModel>(

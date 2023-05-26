@@ -1,4 +1,4 @@
-package com.alezzgo.notes.ui
+package weeew.aleso.llp.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll

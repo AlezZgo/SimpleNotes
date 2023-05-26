@@ -1,6 +1,6 @@
-package com.alezzgo.notes.ui
+package weeew.aleso.llp.ui
 
-import com.alezzgo.notes.db.Note
+import weeew.aleso.llp.db.Note
 
 data class NoteState(
     val notes: List<Note> = emptyList(),
