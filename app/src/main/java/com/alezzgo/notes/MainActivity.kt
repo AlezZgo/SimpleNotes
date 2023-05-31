@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.alezzgo.notes.ui.BannersScreen
 import com.alezzgo.notes.ui.BrowserScreen
 import com.alezzgo.notes.ui.BrowserViewModel
 import com.alezzgo.notes.ui.theme.NotesTheme
@@ -44,9 +45,7 @@ class MainActivity : ComponentActivity() {
             NotesTheme {
 //                val state by vm.state.collectAsState()
 //                NotePage(state = state, onEvent = vm::onEvent)
-                BrowserScreen(
-                    vm
-                )
+                BannersScreen()
 
             }
         }
