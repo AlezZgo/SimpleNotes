@@ -1,4 +1,4 @@
-package weeew.aleso.llp.db
+package com.alezzgo.notes.db
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

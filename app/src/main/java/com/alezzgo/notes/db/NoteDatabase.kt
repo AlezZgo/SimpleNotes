@@ -1,4 +1,4 @@
-package weeew.aleso.llp.db
+package com.alezzgo.notes.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

@@ -1,4 +1,4 @@
-package weeew.aleso.llp
+package com.alezzgo.notes
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

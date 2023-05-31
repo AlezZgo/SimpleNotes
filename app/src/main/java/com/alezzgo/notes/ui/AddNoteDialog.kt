@@ -1,4 +1,4 @@
-package weeew.aleso.llp.ui
+package com.alezzgo.notes.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

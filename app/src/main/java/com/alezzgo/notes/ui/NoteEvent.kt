@@ -1,6 +1,6 @@
-package weeew.aleso.llp.ui
+package com.alezzgo.notes.ui
 
-import weeew.aleso.llp.db.Note
+import com.alezzgo.notes.db.Note
 
 sealed interface NoteEvent {
     object SaveNote : NoteEvent

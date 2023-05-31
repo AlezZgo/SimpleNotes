@@ -1,4 +1,4 @@
-package weeew.aleso.llp.ui.theme
+package com.alezzgo.notes.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

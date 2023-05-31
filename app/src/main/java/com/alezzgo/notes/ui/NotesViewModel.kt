@@ -1,11 +1,11 @@
-package weeew.aleso.llp.ui
+package com.alezzgo.notes.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
-import weeew.aleso.llp.db.Note
-import weeew.aleso.llp.db.NoteDao
+import com.alezzgo.notes.db.Note
+import com.alezzgo.notes.db.NoteDao
 
 class NotesViewModel(
     private val dao: NoteDao
