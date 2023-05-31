@@ -1,19 +1,13 @@
 package com.alezzgo.notes.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.background
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.PressInteraction
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
-
-
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -21,8 +15,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
@@ -38,7 +31,6 @@ fun BannersScreen() {
     ViewPagerCompose()
 
 
-
 }
 
 @OptIn(ExperimentalPagerApi::class)
@@ -46,14 +38,12 @@ fun BannersScreen() {
 fun ViewPagerCompose() {
     val pages = listOf("Page 1", "Page 2", "Page 3", "Page 4", "Page 5")
 
-    val pagerState = rememberPagerState(
-        initialPage = 0
-    )
+    val pagerState = rememberPagerState(initialPage = 0)
     val scope = rememberCoroutineScope()
 
     val interactionSource = remember { MutableInteractionSource() }
 
-    LaunchedEffect(key1 = pagerState,  key2 = interactionSource) {
+    LaunchedEffect(key1 = pagerState, key2 = interactionSource) {
         scope.launch {
             while (true) {
                 delay(5000) // ждать 5 секунд
@@ -91,9 +81,7 @@ fun ViewPagerCompose() {
         }
     }
 
-
-    
-    Box(modifier = Modifier.fillMaxSize()) {
+    Box(modifier = Modifier.fillMaxWidth().height(100.dp)) {
         HorizontalPager(
             state = pagerState,
             count = pages.size,
